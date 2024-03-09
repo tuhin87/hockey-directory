@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey by Tailwind</title>
+    <!--  Tailwind and DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- -stylesheet link- -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!----font awesome link---->
     <script src="https://kit.fontawesome.com/99c07c3c49.js" crossorigin="anonymous"></script>
     <!doctype html>
 <html>
 </head>
 <body>
     <header>
+      <!-- --Navbar starts here -->
         <nav>
           <div class="container mx-auto  lg:px-8  lg:my-8">
             <div class="navbar flex-1 justify-evenly lg:justify-between">
@@ -41,6 +45,47 @@
             </div>
           </div>
         </nav>
+      <!-- --Banner section starts here -->
+        <section>
+          <div class="container p-6 mx-auto lg:flex flex-col lg:px-8  lg:my-8">
+            <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
+            <div class= "bg-black text-white lg:mx-auto lg:h-[10vh]  lg:w-1/2 lg:-translate-y-32 lg:translate-x-60 rounded-lg p-8 mt-2">
+              <h3 class="text-xl text-h font-extrabold ">Meet all the heroes from the field</h3>
+              <p class="text-xs">Enjoy the glory of Hockey and watch our programmes for different age groups where endless possibility remain our culture. </p>
+            </div>
+            
+          </div>
+
+        </section>
 
     </header>
     <main>
