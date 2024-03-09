@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey by Tailwind</title>
-    <!--  Tailwind and DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- -stylesheet link- -->
-    <link rel="stylesheet" href="./styles/styles.css">
-    <!----font awesome link---->
-    <script src="https://kit.fontawesome.com/99c07c3c49.js" crossorigin="anonymous"></script>
-    <!doctype html>
-<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey by Tailwind</title>
+  <!--  Tailwind and DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- -stylesheet link- -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <!----font awesome link---->
+  <script src="https://kit.fontawesome.com/99c07c3c49.js" crossorigin="anonymous"></script>
+  <!doctype html>
+  <html>
 </head>
+
 <body>
-    <header>
-      <!-- --Navbar starts here -->
-        <nav>
-          <div class="container mx-auto">
-            <div class="navbar flex-1 justify-evenly lg:justify-between">
-              
-              <div class="navbar-start">
-                <div tabindex="0" role="button" class="btn lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <a class="btn text-xl lg:text-4xl text-black-800">Hockey<span class="text-[#FF4240]">’</span>s</a>
-              </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                  <li><a class="text-[#FF4240]">Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <div class="navbar-end">
-                <div class="sm:hidden">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <a class="btn rounded-lg bg-red-500 text-white text-sm lg:text-xl lg:text-white-700 ml-2 lg:ml-6">Get Ticket</a>
-              </div>
+  <header>
+    <!-- --Navbar starts here -->
+    <nav>
+      <div class="container mx-auto px-4">
+        <div class="navbar flex-1 justify-evenly lg:justify-between">
+
+          <div class="navbar-start">
+            <div tabindex="0" role="button" class="btn lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <a class="btn text-xl lg:text-4xl text-black-800">Hockey<span class="text-[#FF4240]">’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-[#FF4240]">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="sm:hidden">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a class="btn rounded-lg bg-red-500 text-white text-sm lg:text-xl lg:text-white-700 ml-2 lg:ml-6">Get
+              Ticket</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- --Banner section starts here -->
+    <section>
+      <div class="container p-6 mx-auto lg:flex flex-col ">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-        </nav>
-      <!-- --Banner section starts here -->
-        <section>
-          <div class="container p-6 mx-auto lg:flex flex-col ">
-            <div class="carousel w-full">
-              <div id="slide1" class="carousel-item relative w-full">
-                <img src="./Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide4" class="btn btn-circle">❮</a> 
-                  <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <div id="slide2" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide1" class="btn btn-circle">❮</a> 
-                  <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <div id="slide3" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide2" class="btn btn-circle">❮</a> 
-                  <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <div id="slide4" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide3" class="btn btn-circle">❮</a> 
-                  <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-              </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
-            <div class= "bg-black text-white lg:mx-auto lg:h-[10vh]  lg:w-1/2 lg:-translate-y-32 lg:translate-x-60 rounded-lg p-8 mt-2">
-              <h3 class="text-xl text-h font-extrabold ">Meet all the heroes from the field</h3>
-              <p class="text-xs">Enjoy the glory of Hockey and watch our programmes for different age groups where endless possibility remain our culture. </p>
-            </div>
-            
           </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black text-white lg:mx-auto lg:h-[10vh]  lg:w-1/2 lg:-translate-y-32 lg:translate-x-60 rounded-lg p-8 mt-2">
+          <h3 class="text-xl text-h font-extrabold ">Meet all the heroes from the field</h3>
+          <p class="text-xs">Enjoy the glory of Hockey and watch our programmes for different age groups where endless
+            possibility remain our culture. </p>
+        </div>
 
-        </section>
-    </header>
-    <main>
-  <!-- ---Professional Hockey club section starts here -->
-      <section class="container mx-auto px-6 text-center">
-        <h1 class="text-2xl lg:text-4xl font-extrabold my-4">Professional Hockeys Club</h1>
-        <p class="text-xs">This professional Hockey club has been established over 100 years <br> ago. So,it has rich culture and efficient profoundly famous teachers to make your dream come true. </p>
-      </section>
-  <!--  -->
+      </div>
 
-    </main>
-    <footer>
+    </section>
+  </header>
+  <main>
+    <!-- ---Professional Hockey club section starts here -->
+    <section class="container mx-auto px-6 text-center">
+      <h1 class="text-2xl lg:text-4xl font-extrabold my-4">Professional Hockeys Club</h1>
+      <p class="text-xs">This professional Hockey club has been established over 100 years <br> ago. So,it has rich
+        culture and efficient profoundly famous teachers to make your dream come true. </p>
+    </section>
+    <!-- Percentage section starts here  -->
+    <section class="container mx-auto px-4 mt-12 mb-12">
+      <div class="grid grid-flow-row gap-6 lg:flex lg:justify-evenly">
+      
+        <div class="text-center">
+          <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+          <h2 class="text-xl font-extrabold">Prayer Facility</h2>
+          <p class="text-xs">Prayer bring inner peace,<br>anyone well-come.</p>
+        </div>
+        <div class="text-center">
+          <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+          <h2 class="text-xl font-extrabold">Experienced Coach</h2>
+          <p class="text-xs">Experience teachers are our strength and <br> wellknown for their capacity.</p>
+        </div>
+       <div class="text-center">
+        <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+        <h2 class="text-xl font-extrabold">Senior Player</h2>
+        <p class="text-xs">Senior players are always welcome in <br> all sessions.</p>
+       </div>
+        <div class="text-center">
+          <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+          <h2 class="text-xl font-extrabold">Training Ground</h2>
+        <p class="text-xs">Our well known ground has exceptional facilities <br> to provide everyone in society.</p>
+        </div>
+      </div>
+    </section>
 
-    </footer>
-    
+  </main>
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
